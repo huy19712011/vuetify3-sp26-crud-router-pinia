@@ -19,7 +19,11 @@ declare module 'vue-router/auto-routes' {
    */
   export interface RouteNamedMap {
     '/': RouteRecordInfo<'/', '/', Record<never, never>, Record<never, never>>,
+    '/Add': RouteRecordInfo<'/Add', '/Add', Record<never, never>, Record<never, never>>,
     '/Test': RouteRecordInfo<'/Test', '/Test', Record<never, never>, Record<never, never>>,
+    'tutorial-details': RouteRecordInfo<'tutorial-details', '/tutorials/:id', { id: ParamValue<true> }, { id: ParamValue<false> }>,
+    'tutorial-list': RouteRecordInfo<'tutorial-list', '/tutorials', Record<never, never>, Record<never, never>>,
+    '/Tutorials': RouteRecordInfo<'/Tutorials', '/Tutorials', Record<never, never>, Record<never, never>>,
   }
 
   /**
@@ -37,8 +41,24 @@ declare module 'vue-router/auto-routes' {
       routes: '/'
       views: never
     }
+    'src/pages/Add.vue': {
+      routes: '/Add'
+      views: never
+    }
     'src/pages/Test.vue': {
       routes: '/Test'
+      views: never
+    }
+    'src/pages/tutorials/[id].vue': {
+      routes: 'tutorial-details'
+      views: never
+    }
+    'src/pages/tutorials/Tutorials.vue': {
+      routes: 'tutorial-list'
+      views: never
+    }
+    'src/pages/Tutorials.vue': {
+      routes: '/Tutorials'
       views: never
     }
   }

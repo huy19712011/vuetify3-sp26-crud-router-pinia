@@ -1,0 +1,24 @@
+{
+  "tutorials": [
+    {
+      "id": 1,
+      "title": "Tutorial 1",
+      "description": "Description 1",
+      "published": false
+    },
+    {
+      "id": 2,
+      "title": "Tutorial 2",
+      "description": "Description 2",
+      "published": true
+    },
+    {
+      "id": 3,
+      "title": "Tutorial 3",
+      "description": "Description 3",
+      "published": true
+    }
+  ]
+}
+
+// json-server -p 8080 src/backend-api/db-tutorial.json

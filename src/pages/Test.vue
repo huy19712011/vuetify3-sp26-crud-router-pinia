@@ -3,4 +3,7 @@
     <h2>Test Page</h2>
     <p>Utility Page for testing components and other pages!</p>
   </div>
+  <div>
+    <TutorialList></TutorialList>
+  </div>
 </template>
