@@ -11,4 +11,6 @@
 <route lang="yaml">
 path: /tutorials
 name: tutorial-list
+meta:
+  layout: default2
 </route>

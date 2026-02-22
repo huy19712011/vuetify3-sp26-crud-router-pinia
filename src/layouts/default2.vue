@@ -3,8 +3,7 @@
     <router-view/>
   </v-main>
 
-  <AppFooter/>
-  <!--  <AppFooter v-if="$route.meta.layout !== 'default2'"/>-->
+  <HelloWorld/>
 </template>
 
 <script setup>

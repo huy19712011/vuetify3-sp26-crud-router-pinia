@@ -23,7 +23,6 @@ declare module 'vue-router/auto-routes' {
     '/Test': RouteRecordInfo<'/Test', '/Test', Record<never, never>, Record<never, never>>,
     'tutorial-details': RouteRecordInfo<'tutorial-details', '/tutorials/:id', { id: ParamValue<true> }, { id: ParamValue<false> }>,
     'tutorial-list': RouteRecordInfo<'tutorial-list', '/tutorials', Record<never, never>, Record<never, never>>,
-    '/Tutorials': RouteRecordInfo<'/Tutorials', '/Tutorials', Record<never, never>, Record<never, never>>,
   }
 
   /**
@@ -55,10 +54,6 @@ declare module 'vue-router/auto-routes' {
     }
     'src/pages/tutorials/Tutorials.vue': {
       routes: 'tutorial-list'
-      views: never
-    }
-    'src/pages/Tutorials.vue': {
-      routes: '/Tutorials'
       views: never
     }
   }
